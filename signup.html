@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--This title tag gives a name to the webpage itself, this can be seen at the very top of your web browser.-->
+  <title>SignUp</title>
+<link rel="icon" type="image/ico" href="logo.png" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  
+<div class="header">
+  <h2 style="font-size:60px;font-style: Verdana; color:#9900ff;">Computatrum</h2>
+
+  <p style="color:#9900ff; font-size: 20px;">"Place to purchase quality computer hardware."</p>
+
+</div>
+
+<div id="navbar">
+  <a href="website.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href class="active" =signup.html>SignUp</a>
+
+
+
+</div>
+<!--I have used some empty paragraphs to keep the distance between the navigation bar and the signup form-->
+<p>_____</p>
+<p>_____</p>
+<p>_____</p>
+<p>_____</p>
+<p>_____</p>
+<p>_____</p>
+<p>_____</p>
+<p>_____</p>
+<p>_____</p>
+<p>_____</p>
+<!--This is where i have started to develop the sign up form as you can see i created label for name ,email, password and repeat password then created an input field for every signle one of them. required at the end shows that without them the program will not work. -->
+<form>
+  <div class="container">
+    <h1><font color = white>Sign Up</h1>
+    <p><font color = white>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="Name"><b>Name</b></label>
+    <input type="text" placeholder="Enter your Name" name="Name"required >
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="Email"required >
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="Password" required >
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+<!--This is the Terms and Conditions link which would take the user to it, here they can read about the law which is connected to my company ,their rights what they can do, cant do which also applies to the seller too.-->
+    <p>By creating an account you agree to our <a href="Terms and Conditions.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+<a href="signupcomplete.html"><button type="button" name="button">Sign Up</button>
+
+
+<script type="text/javascript">
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {myFunction()};
+
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+</form>
+</body>
+</html>
