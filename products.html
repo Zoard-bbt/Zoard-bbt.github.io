@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products</title>
+<link rel="icon" type="image/ico" href="logo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<div class="header">
+  <h2 style="font-size:60px;font-style: Verdana; color:#9900ff;">Computatrum</h2>
+  <p style="color:#9900ff; font-size: 20px;">"Place to purchase quality computer hardware."</p>
+</div>
+
+<div id="navbar">
+  <a href="website.html">Home</a>
+  <a href class="active"="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href = "signup.html">SignUp</a>
+</div>
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<!--These are buttons which different brand pictures on them to guide the user to differnet products and differnet type of products there are all togther 5.-->
+<div class="container">
+  <form action="store.html">
+  <input type="image" src="razerlogo3.png" alt="Razer" width="400" height="300">
+</form>
+</div>
+<!--I added a picture as the input and a link to the appropriate web page. I also set the same widht as well as height to make the website look symetrical. -->
+<div class="container">
+  <form action="corsair.html">
+  <input type="image" src="Corsair.png" alt="Corsair" width="400" height="300" >
+</form>
+</div>
+
+<div class="container">
+  <form action="logitech.html">
+  <input type="image" src="logitechlogo.png" alt="Logitech" width="400" height="300">
+</form>
+</div>
+
+<div class="container">
+  <form action="hyperx.html">
+  <input type="image" src="hyperx.jpg" alt="HyperX" width="400" height="300">
+</form>
+</div>
+
+<div class="container">
+  <form action="msi.html">
+  <input type="image" src="msilogo.jpg" alt="MSI" width="400" height="300">
+</form>
+</div>
+
+<script type="text/javascript">
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
